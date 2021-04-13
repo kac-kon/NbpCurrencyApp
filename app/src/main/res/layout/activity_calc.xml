@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalcActivity">
+
+    <EditText
+        android:id="@+id/valueTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:ems="10"
+
+        android:gravity="end"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calcSwitch" />
+
+    <TextView
+        android:id="@+id/selectedCurrency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/currentCurrency"
+        app:layout_constraintBottom_toBottomOf="@+id/valueTextNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/valueTextNumber"
+        app:layout_constraintTop_toTopOf="@+id/valueTextNumber" />
+
+    <Spinner
+        android:id="@+id/currencySelectSpinner"
+        android:layout_width="150sp"
+        android:layout_height="45sp"
+        app:layout_constraintBottom_toBottomOf="@+id/selectCurrenctTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/selectCurrenctTextView"
+        app:layout_constraintTop_toTopOf="@+id/selectCurrenctTextView" />
+
+    <TextView
+        android:id="@+id/selectCurrenctTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/select_currency"
+        app:layout_constraintStart_toStartOf="@+id/answerTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/calcSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currencySelectSpinner"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/currentCalcSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/currentCalcSwitch"
+        app:layout_constraintBottom_toTopOf="@+id/valueTextNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/calcSwitch"
+        app:layout_constraintTop_toBottomOf="@+id/currencySelectSpinner" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valueTextNumber" />
+
+    <TextView
+        android:id="@+id/answerTextView"
+        android:layout_width="300sp"
+        android:layout_height="40sp"
+        android:layout_marginTop="100sp"
+        android:ellipsize="start"
+        android:gravity="end"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/currencyTo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculateButton" />
+
+    <TextView
+        android:id="@+id/currencyTo"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:text="PLN"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/answerTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/answerTextView"
+        app:layout_constraintTop_toTopOf="@+id/answerTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

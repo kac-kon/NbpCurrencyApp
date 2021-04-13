@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Kacper_Kontny_wt_15_30</string>
+    <string name="button_currency">View Currencies</string>
+    <string name="button_gold">View Gold</string>
+    <string name="button_calc">Calculate currencies</string>
+    <string name="history_today_text">Today rate: %1$f</string>
+    <string name="history_yesterday_text">Yesterday rate: %1$f</string>
+    <string name="gold_rate">Today gold rate: %1$s</string>
+    <string name="url_a">http://api.nbp.pl/api/exchangerates/tables/A/last/2?format=json</string>
+    <string name="url_b">http://api.nbp.pl/api/exchangerates/tables/B/last/2?format=json</string>
+    <string name="url_g">http://api.nbp.pl/api/cenyzlota/last/30?format=json</string>
+    <string name="select_currency">Select currency</string>
+    <string name="currentCurrency">currency</string>
+    <string name="currentCalcSwitch"><![CDATA[%1$s -> %2$s]]></string>
+    <string name="calculate">Calculate</string>
+</resources>

@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Kacper_Kontny_wt_15_30"
